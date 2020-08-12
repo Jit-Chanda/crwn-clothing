@@ -7,22 +7,15 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import ShopPage from './pages/shop/shop.component';
 
-const HatsPage = (props) => {
-  console.log(props);
-  return(
-    <div>
-        Hats Page
-    </div>
-  )
-}
 
 function App() {
   return (
     <div >
       <Switch>
         <Route exact path='/' component={HomePage} />
-        <Route  path='/shop/hats' component={HatsPage} />
+        <Route  path='/shop' component={ShopPage} />
       </Switch>
     </div>
   );
